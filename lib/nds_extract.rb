@@ -97,6 +97,8 @@ def movies_with_directors_set(source)
     movies_for_this_director = movies_with_director_key(director[:name],director[:movies])
     movies_list << movies_for_this_director
   end
+  
+  movies_list
 end
 
 # ----------------    End of Your Code Region --------------------
