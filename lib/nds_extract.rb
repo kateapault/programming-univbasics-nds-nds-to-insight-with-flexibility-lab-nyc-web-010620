@@ -90,6 +90,13 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
+  
+  movies_list = []
+  
+  for director in source do
+    movies_for_this_director = movies_with_director_key(director[:name],director[:movies])
+    movies_list << movies_for_this_director
+  end
 end
 
 # ----------------    End of Your Code Region --------------------
