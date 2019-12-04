@@ -53,10 +53,7 @@ def movies_with_director_key(name, movies_collection)
   
   for movie in movies_collection do
     movie_info = movie_with_director_name(name, movie)
-    movies << {
-      title: movie_info[:title],
-      director_name: movie_info[:director_name]
-    }
+    movies << movie_info
   end
   
   movies
