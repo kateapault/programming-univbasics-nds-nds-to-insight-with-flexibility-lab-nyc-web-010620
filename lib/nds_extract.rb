@@ -73,7 +73,7 @@ def gross_per_studio(collection)
   studio_grosses = Hash.new(0)
   
   for movie in collection do
-    
+    studio_grosses[movie[:studio]] += movie[:worldwide_gross]
   end
 
 end
